@@ -6,16 +6,16 @@
 
 <?php 
   $fator = 0;
+  $response;// = 'Insira a cifra aqui.';
 ?>
 
-  <form id="formul" method='POST'>
 
-  {{-- <form action="{{ route('enviar') }}" method='POST'>  --}}
+  <form action="{{ route('changed_chords') }}" method='POST'> 
     @csrf
 
 
-    <div id="div_alterar">
-      <div id="div_filha_alterar">
+    <div class="div_alterar">
+      <div class="div_filha_alterar">
 
         <input name="fator" id="fator" value="{{ $fator }}" /> 
         <button id="diminuir" class="btn btn-danger aument_dimin" onclick="intervalo('-')">-</button>
@@ -25,8 +25,8 @@
       </div>
     </div>
 
-    <div id="div_alterar">
-      <div id="div_filha_alterar">
+    <div class="div_alterar">
+      <div class="div_filha_alterar">
         <button id="but_alterar" class="btn btn-danger" >Alterar</button>
     
       </div>
@@ -36,7 +36,7 @@
     <div class="div_coleabaixo">Ajuste a tonalidade desejada.</div>
 
     <div id="div_text">
-      <textarea id="texto" name="texto" rows="10" cols="120" class="container-fluid -body-color"></textarea>
+      <textarea id="texto" name="texto" rows="10" cols="120" class="container-fluid -body-color">{{ $response }}</textarea>
     </div>
   </form>
 </div><!-- page -->
@@ -44,18 +44,8 @@
 
 
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.3.0/jquery.form.min.js"></script>
-  {{--
-<script type="text/javascript">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.3.0/jquery.form.min.js" ></script>
 
-function chose(aum_dim){
-  document.getElementById("fator").value = aum_dim;
-  var form = document.getElementById("formul");
-  form.action = "/enviar";
-}
-
-</script>
---}}
 
 
 <script type="text/javascript">

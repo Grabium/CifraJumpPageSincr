@@ -50,7 +50,7 @@ h1 {
   border-color:var(--creme);
 }
 
-#div_alterar {
+.div_alterar {
   /*background-color:red;*/
   height: 17vh;
   align-items: center;
@@ -58,7 +58,7 @@ h1 {
   display: flex;
 }
 
-#div_filha_alterar {
+.div_filha_alterar {
   width: 70vw;
   height: 14vh;
   background-color:var(--cinza);
