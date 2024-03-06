@@ -1,0 +1,130 @@
+:root {
+  --creme:#e4dcd7;
+  --marrom:#484441;
+  --cinza:#94918f;
+}
+
+body{
+  margin: 0px;
+  overflow: auto;
+  background-image: url(textura.jng);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+#div_page {
+  font-size: 25px;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+#div_show {
+  height: 20vh;
+  font-family: "Times New Roman", Times, serif;
+  background-color:var(--creme);
+  color:var(--marrom);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+#fator {
+  width: 20vw;
+}
+
+.div_coleabaixo {
+  font-size: 0.7em;
+  /*align-items: center;*/
+  justify-content: center;
+  display: flex;
+  /*background-color:red;*/
+}
+
+.btn {
+  background-color:var(--marrom);
+  border: 5px;
+  border-color:var(--creme);
+}
+
+#div_alterar {
+  /*background-color:red;*/
+  height: 17vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+#div_filha_alterar {
+  width: 70vw;
+  height: 14vh;
+  background-color:var(--cinza);
+  border-color:var(--marrom);
+  align-items: center;
+  display: flex;
+  border-radius: 40px;
+  border: solid;
+  justify-content: space-evenly;
+}
+
+#fator {
+  display: none;
+}
+
+#but_alterar {
+  border-radius: 40px;
+  width: 27vw;
+}
+
+#lab_semitons {
+  color: white;
+}
+
+#div_operacoes {
+  /*background-color:red;*/
+  height: 17vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+#div_filha_operacoes {
+  width: 70vw;
+  height: 14vh;
+  background-color:var(--cinza);
+  border-color:var(--marrom);
+  align-items: center;
+  display: flex;
+  border-radius: 40px;
+  border: solid;
+  justify-content: space-evenly;
+}
+
+.aument_dimin {
+  width: 22vw;
+}
+
+#diminuir {
+  border-top-left-radius: 40px;
+  border-bottom-left-radius:40px;
+}
+
+#aumentar {
+  border-bottom-right-radius: 40px;
+  border-top-right-radius: 40px;
+}
+
+#texto {
+  width: 90vw;
+  border-radius: 10px;
+  border: solid;
+  border-width: 2px;
+}
+
+#div_text {
+  justify-content: center;
+  display: flex;
+}
