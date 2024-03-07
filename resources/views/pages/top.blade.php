@@ -11,7 +11,8 @@
     <title>Cifras Jump</title>
   </head>
   <body >
-    <div id='div_show'><h1>CIFRAS-JUMP</h1>
+    <div id='div_show' >
+      <h1 >CIFRAS-JUMP</h1>
     </div>
 
 

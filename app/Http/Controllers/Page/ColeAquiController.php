@@ -7,8 +7,10 @@ use Illuminate\Http\Request;
 
 class ColeAquiController extends Controller
 {
-  public function __invoke()
+  public function exibirPageHome()
   {
     return view('pages/cole_aqui');
   }
+
+  
 }

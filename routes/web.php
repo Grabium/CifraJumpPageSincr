@@ -35,6 +35,6 @@ Route::get('/', function () {
 });
 */
 
-Route::get('/', ColeAquiController::class);//chama __invoke(), que chama a página inicial.
-Route::post('/changed_chords', ConectAPIController::class)->name('changed_chords');//chama __invoke(), que envia a requisição.
-
+Route::get('/', [ColeAquiController::class, 'exibirPageHome'])->name('home');//chama __invoke(), que chama a página inicial.
+Route::post('/changed_chords', [ConectAPIController::class, 'changed_chords'])->name('changed_chords');//chama __invoke(), que envia a requisição.
+Route::post('/outroTom', [ConectAPIController::class, 'outroTom'])->name('outroTom');

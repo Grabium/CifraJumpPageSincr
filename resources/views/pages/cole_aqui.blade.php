@@ -14,7 +14,7 @@
     <div class="div_alterar">
       <div class="div_filha_alterar">
 
-        <input name="fator" id="fator" value="{{ $fator }}" /> 
+        <input name="fator" id="fator" class='invisible' value="{{ $fator }}" /> 
         <button id="diminuir" class="btn btn-danger aument_dimin" onclick="intervalo('-')">-</button>
         <label id="lab_fator">0</label>
         <button id="aumentar" class="btn btn-danger aument_dimin" onclick="intervalo('+')" >+</button>
@@ -40,9 +40,7 @@
         value="{{ $response ?? old('texto') }}"
         rows="10" 
         cols="120" 
-        class="container-fluid -body-color">
-      {{ print_r($lines) }}
-      </textarea>
+        class="container-fluid -body-color"></textarea>
     </div>
   </form>
 </div>

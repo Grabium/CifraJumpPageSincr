@@ -12,3 +12,4 @@ function intervalo(operacao){ //recebe "+" ou "-".
   document.getElementById("fator").value = st;  //atribui o valor calculado a id="fator"
   document.getElementById("lab_fator").innerHTML = document.getElementById("fator").value; //resolvi exivbir o valor numa label, por estética, e deixar o imput com display:none; no CSS.
 }
+
