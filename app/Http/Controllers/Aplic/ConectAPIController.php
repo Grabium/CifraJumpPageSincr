@@ -18,7 +18,7 @@ class ConectAPIController extends Controller
       ['fator' => $fator, 'texto' => $texto]
     );
     //Por padrão, no header =>  content type : application/json
-
-    return view('pages/cole_aqui', ['response' => $response]);
+    //dd($response['lines'][0]['content']);
+    return view('pages/cole_aqui', ['lines' => $response['lines'], 'cifers' => $response['cifers']]);
   }
 }
