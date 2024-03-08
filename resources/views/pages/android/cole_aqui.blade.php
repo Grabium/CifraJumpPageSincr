@@ -1,4 +1,4 @@
-@extends('pages/top')
+@extends('pages/layouts/top')
 @section('content')
 
 

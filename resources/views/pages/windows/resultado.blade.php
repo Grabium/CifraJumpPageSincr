@@ -1,0 +1,1 @@
+Página 'resultado' para Windows.

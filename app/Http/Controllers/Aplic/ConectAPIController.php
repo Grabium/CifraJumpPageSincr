@@ -13,13 +13,15 @@ class ConectAPIController extends Controller
 
     $fator = $request['fator'];
     $texto = $request['texto'];
+    $agentUser = $request['agentUser'];
+    $page = 'pages/' . $agentUser . '/resultado';
 
     $response =  Http::post(
       'https://288c64e8-3af4-4158-9f50-cd00e3b677fb-00-2265w61h05qm0.picard.replit.dev/api/',
       ['fator' => $fator, 'texto' => $texto]
     );
     
-    return view('pages/resultado', [
+    return view( $page, [
                 'lines' => $response['lines'],
                 'cifers' => $response['cifers'], 
                 'textoAntigoString' => $texto,

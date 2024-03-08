@@ -7,9 +7,11 @@ use Illuminate\Http\Request;
 
 class ColeAquiController extends Controller
 {
-  public function exibirPageHome()
+  public function exibirPageHome(Request $request)
   {
-    return view('pages/cole_aqui');
+    $agentUser = $request['agentUser'];
+    $page = 'pages/' . $agentUser . '/cole_aqui';
+    return view($page);
   }
 
   

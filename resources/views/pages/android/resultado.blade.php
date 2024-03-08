@@ -1,4 +1,4 @@
-@extends('pages/top')
+@extends('pages/layouts/top')
 @section('content')
 
 <?php $fator = (isset($fator)) ? $fator : 0 ; ?>
